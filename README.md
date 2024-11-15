@@ -1,0 +1,11 @@
+linux部署web应用： 
+基本要求： 
+1）系统的概况描述（系统版本，用户、软件、文件等） 
+2）nginx部署前端页面（flask可跳过此步骤，但也要说明nginx用法） 
+3）python环境+flask+pymysql（lsn有现成的，但要说明重装过程） 
+4）mysql开远程，可读写数据（lsn有现成的，但要说明重装过程） 
+加分项： 
+1）每个步骤的意图描述清晰（每张图和每条命令都要文字说明） 
+2）wsgi（gunicorn或pyuwsgi）多进程启动flask 
+3）docker安装及用处说明 
+4）加入其它数据库（redis、mongo）等
