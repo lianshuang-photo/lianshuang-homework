@@ -58,4 +58,39 @@ button {
 
 button:hover {
     background-color: #357abd;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--input-bg);
+    border: 1px solid #404040;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.file-label {
+    display: block;
+    padding: 12px;
+    background-color: var(--input-bg);
+    border: 1px solid #404040;
+    border-radius: 5px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#image-preview {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+#image-preview img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 5px;
 } 

@@ -42,6 +42,8 @@ function displayRecords(records) {
                     <th>电话</th>
                     <th>地址</th>
                     <th>出生日期</th>
+                    <th>心情</th>
+                    <th>图片</th>
                     <th>提交时间</th>
                 </tr>
             </thead>
@@ -49,6 +51,10 @@ function displayRecords(records) {
     `;
 
     records.forEach(record => {
+        const imageHtml = record.image_path 
+            ? `<img src="http://localhost:8000/uploads/${record.image_path}" alt="上传图片" style="max-width: 100px; max-height: 100px;">` 
+            : '无';
+            
         html += `
             <tr>
                 <td>${record.id}</td>
@@ -57,6 +63,8 @@ function displayRecords(records) {
                 <td>${record.phone}</td>
                 <td>${record.address}</td>
                 <td>${record.birth_date}</td>
+                <td>${record.mood || '未填写'}</td>
+                <td>${imageHtml}</td>
                 <td>${record.created_at}</td>
             </tr>
         `;

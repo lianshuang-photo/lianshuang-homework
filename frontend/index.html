@@ -25,6 +25,23 @@
             <div class="form-group">
                 <input type="date" id="birth_date" required>
             </div>
+            <div class="form-group">
+                <select id="mood">
+                    <option value="">选择今天的心情（可选）</option>
+                    <option value="开心">开心</option>
+                    <option value="平静">平静</option>
+                    <option value="疲惫">疲惫</option>
+                    <option value="兴奋">兴奋</option>
+                    <option value="沮丧">沮丧</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="image" class="file-label">
+                    上传图片（可选）
+                    <input type="file" id="image" accept="image/*">
+                </label>
+                <div id="image-preview"></div>
+            </div>
             <button type="submit">提交</button>
         </form>
         <div class="nav-links" style="margin-top: 20px; text-align: center;">
