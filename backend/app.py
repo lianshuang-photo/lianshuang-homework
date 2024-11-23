@@ -25,9 +25,19 @@ mysql_config = {
 redis_client = redis.Redis(host='localhost', port=6379, db=0)
 
 # MongoDB配置
-mongo_client = MongoClient('mongodb://localhost:27017/')
-mongo_db = mongo_client['user_info']
-mongo_collection = mongo_db['user_logs']
+try:
+    mongo_client = MongoClient('mongodb://localhost:27017/', 
+                             serverSelectionTimeoutMS=5000)  # 添加超时设置
+    # 测试连接
+    mongo_client.server_info()
+    mongo_db = mongo_client['user_info']
+    mongo_collection = mongo_db['user_logs']
+except Exception as e:
+    print(f"MongoDB连接失败: {str(e)}")
+    # 可以设置一个标志来标识MongoDB是否可用
+    MONGODB_AVAILABLE = False
+else:
+    MONGODB_AVAILABLE = True
 
 def get_mysql_connection():
     return pymysql.connect(**mysql_config)
@@ -91,6 +101,36 @@ def submit_info():
         conn.commit()
         print("Data saved to MySQL, user_id:", user_id)
         
+        # 添加Redis缓存
+        redis_client.setex(
+            f"user:{user_id}",
+            3600,  # 1小时过期
+            json.dumps({
+                'name': data['name'],
+                'email': data['email'],
+                'phone': data['phone'],
+                'address': data['address'],
+                'birth_date': data['birth_date'],
+                'mood': data.get('mood'),
+                'image_path': image_path
+            })
+        )
+
+        # 只在MongoDB可用时记录日志
+        if MONGODB_AVAILABLE:
+            try:
+                mongo_collection.insert_one({
+                    'user_id': user_id,
+                    'action': 'submit',
+                    'data': data,
+                    'timestamp': datetime.now(),
+                    'ip_address': request.remote_addr,
+                    'user_agent': request.user_agent.string
+                })
+            except Exception as e:
+                print(f"MongoDB日志记录失败: {str(e)}")
+                # MongoDB失败不影响主要功能
+
         return jsonify({'status': 'success', 'user_id': user_id})
     
     except Exception as e:
@@ -134,6 +174,59 @@ def get_records():
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+
+# 添加新的API端点来获取缓存的用户信息
+@app.route('/api/user/<int:user_id>', methods=['GET'])
+def get_user(user_id):
+    try:
+        # 先从Redis缓存获取
+        cached_data = redis_client.get(f"user:{user_id}")
+        if cached_data:
+            return jsonify({
+                'status': 'success',
+                'data': json.loads(cached_data),
+                'source': 'cache'
+            })
+
+        # 如果缓存没有，从MySQL获取
+        conn = get_mysql_connection()
+        cursor = conn.cursor(pymysql.cursors.DictCursor)
+        cursor.execute("SELECT * FROM users WHERE id = %s", (user_id,))
+        user_data = cursor.fetchone()
+
+        if not user_data:
+            return jsonify({'status': 'error', 'message': 'User not found'}), 404
+
+        # 将数据存入缓存
+        redis_client.setex(
+            f"user:{user_id}",
+            3600,
+            json.dumps(user_data)
+        )
+
+        return jsonify({
+            'status': 'success',
+            'data': user_data,
+            'source': 'database'
+        })
+
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)}), 500
+
+# 添加API端点来获取用户操作日志
+@app.route('/api/user/<int:user_id>/logs', methods=['GET'])
+def get_user_logs(user_id):
+    try:
+        logs = list(mongo_collection.find(
+            {'user_id': user_id},
+            {'_id': 0}  # 不返回MongoDB的_id字段
+        ))
+        return jsonify({
+            'status': 'success',
+            'logs': logs
+        })
+    except Exception as e:
+        return jsonify({'status': 'error', 'message': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001) 

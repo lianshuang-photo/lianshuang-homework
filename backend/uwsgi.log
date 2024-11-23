@@ -431,3 +431,180 @@ SQL values: ('1', '1@1', '11', '11', '2024-11-23', '平静', None)
 Data saved to MySQL, user_id: 20
 [pid: 23852|app: 0|req: 4/4] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:50:47 2024] POST /api/submit => generated 34 bytes in 8 msecs (HTTP/1.0 200) 4 headers in 137 bytes (2 switches on core 1)
 [pid: 23852|app: 0|req: 5/5] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 00:50:48 2024] GET /api/records => generated 3268 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 105 bytes (1 switches on core 0)
+Sun Nov 24 00:51:54 2024 - SIGINT/SIGTERM received...killing workers...
+Sun Nov 24 00:51:54 2024 - gateway "uWSGI http 1" has been buried (pid: 23854)
+Sun Nov 24 00:51:56 2024 - worker 3 buried after 2 seconds
+Sun Nov 24 00:52:55 2024 - worker 1 (pid: 23850) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:52:55 2024 - worker 2 (pid: 23851) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:52:55 2024 - worker 4 (pid: 23853) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:52:56 2024 - worker 4 buried after 1 seconds
+Sun Nov 24 00:52:56 2024 - worker 2 buried after 1 seconds
+Sun Nov 24 00:52:56 2024 - worker 1 buried after 1 seconds
+Sun Nov 24 00:52:56 2024 - goodbye to uWSGI.
+Sun Nov 24 01:02:13 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 01:02:13 2024] ***
+Sun Nov 24 01:02:13 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Sun Nov 24 01:02:13 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Sun Nov 24 01:02:13 2024 - nodename: baotianyidemini
+Sun Nov 24 01:02:13 2024 - machine: arm64
+Sun Nov 24 01:02:13 2024 - clock source: unix
+Sun Nov 24 01:02:13 2024 - pcre jit disabled
+Sun Nov 24 01:02:13 2024 - detected number of CPU cores: 14
+Sun Nov 24 01:02:13 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Sun Nov 24 01:02:13 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+Sun Nov 24 01:02:13 2024 - your processes number limit is 10666
+Sun Nov 24 01:02:13 2024 - your memory page size is 16384 bytes
+Sun Nov 24 01:02:13 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Sun Nov 24 01:02:13 2024 - detected max file descriptor number: 256
+Sun Nov 24 01:02:13 2024 - lock engine: OSX spinlocks
+Sun Nov 24 01:02:13 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Sun Nov 24 01:02:13 2024 - uWSGI http bound on :5001 fd 4
+Sun Nov 24 01:02:13 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:51914 (port auto-assigned) fd 3
+Sun Nov 24 01:02:13 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Sun Nov 24 01:02:13 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 01:02:13 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 01:02:13 2024 - Python main interpreter initialized at 0x103073ba0
+Sun Nov 24 01:02:13 2024 - python threads support enabled
+Sun Nov 24 01:02:13 2024 - your server socket listen backlog is limited to 100 connections
+Sun Nov 24 01:02:13 2024 - your mercy for graceful operations on workers is 60 seconds
+Sun Nov 24 01:02:13 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Sun Nov 24 01:02:13 2024 - *** Operational MODE: preforking+threaded ***
+Sun Nov 24 01:02:13 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+Sun Nov 24 01:02:13 2024 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x103073ba0 pid: 24193 (default app)
+Sun Nov 24 01:02:13 2024 - *** uWSGI is running in multiple interpreter mode ***
+Sun Nov 24 01:02:13 2024 - spawned uWSGI master process (pid: 24193)
+Sun Nov 24 01:02:13 2024 - spawned uWSGI worker 1 (pid: 24194, cores: 2)
+Sun Nov 24 01:02:13 2024 - spawned uWSGI worker 2 (pid: 24195, cores: 2)
+Sun Nov 24 01:02:13 2024 - spawned uWSGI worker 3 (pid: 24196, cores: 2)
+Sun Nov 24 01:02:13 2024 - spawned uWSGI worker 4 (pid: 24197, cores: 2)
+Sun Nov 24 01:02:13 2024 - spawned uWSGI http 1 (pid: 24198)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 21
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 22
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 2/1] 127.0.0.1 () {56 vars in 906 bytes} [Sun Nov 24 01:03:02 2024] POST /api/submit => generated 249 bytes in 30083 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 0)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 23
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 3/2] 127.0.0.1 () {56 vars in 906 bytes} [Sun Nov 24 01:03:04 2024] POST /api/submit => generated 249 bytes in 30259 msecs (HTTP/1.0 500) 4 headers in 157 bytes (2 switches on core 1)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 24
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 4/3] 127.0.0.1 () {56 vars in 905 bytes} [Sun Nov 24 01:03:32 2024] POST /api/submit => generated 249 bytes in 30072 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 0)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 25
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 5/4] 127.0.0.1 () {56 vars in 905 bytes} [Sun Nov 24 01:03:34 2024] POST /api/submit => generated 249 bytes in 30247 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 1)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 26
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 6/5] 127.0.0.1 () {56 vars in 905 bytes} [Sun Nov 24 01:04:02 2024] POST /api/submit => generated 249 bytes in 30075 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 0)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 27
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 7/6] 127.0.0.1 () {56 vars in 905 bytes} [Sun Nov 24 01:04:05 2024] POST /api/submit => generated 249 bytes in 30214 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 1)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 28
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 8/7] 127.0.0.1 () {56 vars in 906 bytes} [Sun Nov 24 01:04:32 2024] POST /api/submit => generated 249 bytes in 30029 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 0)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 29
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 9/8] 127.0.0.1 () {56 vars in 906 bytes} [Sun Nov 24 01:04:35 2024] POST /api/submit => generated 249 bytes in 30157 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 1)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 30
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 10/9] 127.0.0.1 () {56 vars in 906 bytes} [Sun Nov 24 01:05:02 2024] POST /api/submit => generated 249 bytes in 30072 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 0)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 31
+Error: No servers found yet, Timeout: 30s, Topology Description: <TopologyDescription id: 67420a954b01bd8d242b49b7, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>
+[pid: 24196|app: 0|req: 11/10] 127.0.0.1 () {56 vars in 906 bytes} [Sun Nov 24 01:05:05 2024] POST /api/submit => generated 249 bytes in 30206 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 1)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 32
+Sun Nov 24 01:05:42 2024 - SIGINT/SIGTERM received...killing workers...
+Sun Nov 24 01:05:42 2024 - gateway "uWSGI http 1" has been buried (pid: 24198)
+Sun Nov 24 01:05:43 2024 - worker 3 buried after 1 seconds
+Sun Nov 24 01:06:43 2024 - worker 1 (pid: 24194) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 01:06:43 2024 - worker 2 (pid: 24195) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 01:06:43 2024 - worker 4 (pid: 24197) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 01:06:44 2024 - worker 4 buried after 1 seconds
+Sun Nov 24 01:06:44 2024 - worker 2 buried after 1 seconds
+Sun Nov 24 01:06:44 2024 - worker 1 buried after 1 seconds
+Sun Nov 24 01:06:44 2024 - goodbye to uWSGI.
+Sun Nov 24 01:07:21 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 01:07:21 2024] ***
+Sun Nov 24 01:07:21 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Sun Nov 24 01:07:21 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Sun Nov 24 01:07:21 2024 - nodename: baotianyidemini
+Sun Nov 24 01:07:21 2024 - machine: arm64
+Sun Nov 24 01:07:21 2024 - clock source: unix
+Sun Nov 24 01:07:21 2024 - pcre jit disabled
+Sun Nov 24 01:07:21 2024 - detected number of CPU cores: 14
+Sun Nov 24 01:07:21 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Sun Nov 24 01:07:21 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+Sun Nov 24 01:07:21 2024 - your processes number limit is 10666
+Sun Nov 24 01:07:21 2024 - your memory page size is 16384 bytes
+Sun Nov 24 01:07:21 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Sun Nov 24 01:07:21 2024 - detected max file descriptor number: 256
+Sun Nov 24 01:07:21 2024 - lock engine: OSX spinlocks
+Sun Nov 24 01:07:21 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Sun Nov 24 01:07:21 2024 - uWSGI http bound on :5001 fd 4
+Sun Nov 24 01:07:21 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:52141 (port auto-assigned) fd 3
+Sun Nov 24 01:07:21 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Sun Nov 24 01:07:21 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 01:07:21 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 01:07:21 2024 - Python main interpreter initialized at 0x102f0fba0
+Sun Nov 24 01:07:21 2024 - python threads support enabled
+Sun Nov 24 01:07:21 2024 - your server socket listen backlog is limited to 100 connections
+Sun Nov 24 01:07:21 2024 - your mercy for graceful operations on workers is 60 seconds
+Sun Nov 24 01:07:21 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Sun Nov 24 01:07:21 2024 - *** Operational MODE: preforking+threaded ***
+Sun Nov 24 01:07:21 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+Sun Nov 24 01:07:21 2024 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x102f0fba0 pid: 24499 (default app)
+Sun Nov 24 01:07:21 2024 - *** uWSGI is running in multiple interpreter mode ***
+Sun Nov 24 01:07:21 2024 - spawned uWSGI master process (pid: 24499)
+Sun Nov 24 01:07:21 2024 - spawned uWSGI worker 1 (pid: 24500, cores: 2)
+Sun Nov 24 01:07:21 2024 - spawned uWSGI worker 2 (pid: 24501, cores: 2)
+Sun Nov 24 01:07:21 2024 - spawned uWSGI worker 3 (pid: 24502, cores: 2)
+Sun Nov 24 01:07:21 2024 - spawned uWSGI worker 4 (pid: 24503, cores: 2)
+Sun Nov 24 01:07:21 2024 - spawned uWSGI http 1 (pid: 24504)
+Received request: ImmutableMultiDict([('name', '123'), ('email', '1@1'), ('phone', '1234'), ('address', '123'), ('birth_date', '2024-11-28'), ('mood', '疲惫')])
+Files: ImmutableMultiDict([])
+SQL values: ('123', '1@1', '1234', '123', '2024-11-28', '疲惫', None)
+Data saved to MySQL, user_id: 33
+[pid: 24503|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 906 bytes} [Sun Nov 24 01:07:35 2024] POST /api/submit => generated 34 bytes in 30 msecs (HTTP/1.0 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 24503|app: 0|req: 2/2] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 01:07:37 2024] GET /api/records => generated 5465 bytes in 4 msecs (HTTP/1.0 200) 3 headers in 105 bytes (1 switches on core 1)
+[pid: 24503|app: 0|req: 3/3] 127.0.0.1 () {50 vars in 821 bytes} [Sun Nov 24 01:08:04 2024] GET /api/user/1 => generated 76 bytes in 3 msecs (HTTP/1.0 500) 3 headers in 122 bytes (2 switches on core 0)
+[pid: 24503|app: 0|req: 4/4] 127.0.0.1 () {50 vars in 821 bytes} [Sun Nov 24 01:08:27 2024] GET /api/user/1 => generated 76 bytes in 5 msecs (HTTP/1.0 500) 3 headers in 122 bytes (2 switches on core 1)
+[pid: 24503|app: 0|req: 5/5] 127.0.0.1 () {50 vars in 823 bytes} [Sun Nov 24 01:08:29 2024] GET /api/user/33 => generated 171 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 104 bytes (1 switches on core 0)
+[pid: 24503|app: 0|req: 6/6] 127.0.0.1 () {50 vars in 831 bytes} [Sun Nov 24 01:09:05 2024] GET /api/user/33/logs => generated 382 bytes in 11 msecs (HTTP/1.0 200) 3 headers in 104 bytes (2 switches on core 1)
+Sun Nov 24 01:09:55 2024 - SIGINT/SIGTERM received...killing workers...
+Sun Nov 24 01:09:55 2024 - gateway "uWSGI http 1" has been buried (pid: 24504)
+Sun Nov 24 01:09:59 2024 - worker 4 buried after 4 seconds
+Sun Nov 24 01:09:59 2024 - worker 3 buried after 4 seconds
+Sun Nov 24 01:09:59 2024 - worker 2 buried after 4 seconds
+Sun Nov 24 01:09:59 2024 - worker 1 buried after 4 seconds
+Sun Nov 24 01:09:59 2024 - goodbye to uWSGI.
