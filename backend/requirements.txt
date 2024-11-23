@@ -1,0 +1,6 @@
+flask==2.0.1
+flask-cors==3.0.10
+pymysql==1.0.2
+redis==4.0.2
+pymongo==4.0.1
+uwsgi==2.0.20 
