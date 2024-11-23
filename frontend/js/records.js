@@ -1,6 +1,6 @@
 async function loadRecords() {
     try {
-        const response = await fetch('http://localhost:8000/api/records', {
+        const response = await fetch('http://localhost:8080/api/records', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json'
@@ -52,7 +52,7 @@ function displayRecords(records) {
 
     records.forEach(record => {
         const imageHtml = record.image_path 
-            ? `<img src="http://localhost:8000/uploads/${record.image_path}" alt="上传图片" style="max-width: 100px; max-height: 100px;">` 
+            ? `<img src="http://localhost:8080/uploads/${record.image_path}" alt="上传图片" style="max-width: 100px; max-height: 100px;">` 
             : '无';
             
         html += `

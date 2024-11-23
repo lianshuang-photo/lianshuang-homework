@@ -38,7 +38,12 @@ def allowed_file(filename):
 
 @app.route('/api/submit', methods=['POST'])
 def submit_info():
+    conn = None
     try:
+        # 添加调试日志
+        print("Received request:", request.form)
+        print("Files:", request.files)
+        
         # 获取表单数据
         data = request.form.to_dict()
         
@@ -48,55 +53,54 @@ def submit_info():
             file = request.files['image']
             if file and file.filename and allowed_file(file.filename):
                 filename = secure_filename(file.filename)
-                # 使用时间戳确保文件名唯一
                 filename = f"{datetime.now().strftime('%Y%m%d%H%M%S')}_{filename}"
                 file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-                file.save(file_path)
-                image_path = filename
+                # 先不保存文件，等数据库操作成功后再保存
 
-        # 存储到MySQL
+        # 存储到MySQL（使用事务）
         conn = get_mysql_connection()
+        conn.begin()  # 开始事务
         cursor = conn.cursor()
         
         sql = """
         INSERT INTO users (name, email, phone, address, birth_date, mood, image_path)
         VALUES (%s, %s, %s, %s, %s, %s, %s)
         """
-        cursor.execute(sql, (
+        values = (
             data['name'],
             data['email'],
             data['phone'],
             data['address'],
             data['birth_date'],
-            data.get('mood', None),  # 可选字段
-            image_path  # 可选字段
-        ))
-        
-        user_id = cursor.lastrowid
-        conn.commit()
-        
-        # 存储到Redis缓存
-        redis_client.setex(
-            f"user:{user_id}",
-            3600,  # 1小时过期
-            json.dumps(data)
+            data.get('mood', None),
+            image_path
         )
+        print("SQL values:", values)
         
-        # 记录到MongoDB
-        mongo_collection.insert_one({
-            'user_id': user_id,
-            'action': 'submit',
-            'data': data,
-            'timestamp': datetime.now()
-        })
+        cursor.execute(sql, values)
+        user_id = cursor.lastrowid
+        
+        # 如果有图片，现在保存它
+        if 'image' in request.files and file and file.filename and allowed_file(file.filename):
+            file.save(file_path)
+            image_path = filename
+            # 更新图片路径
+            cursor.execute("UPDATE users SET image_path = %s WHERE id = %s", (image_path, user_id))
+        
+        # 提交事务
+        conn.commit()
+        print("Data saved to MySQL, user_id:", user_id)
         
         return jsonify({'status': 'success', 'user_id': user_id})
     
     except Exception as e:
+        print("Error:", str(e))  # 添加错误日志
+        if conn:
+            conn.rollback()  # 发生错误时回滚事务
         return jsonify({'status': 'error', 'message': str(e)}), 500
     
     finally:
-        if 'conn' in locals():
+        if conn:
             conn.close()
 
 @app.route('/api/records', methods=['GET'])
@@ -132,4 +136,4 @@ def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=8000) 
+    app.run(debug=True, host='0.0.0.0', port=5001) 

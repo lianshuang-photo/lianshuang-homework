@@ -1,0 +1,433 @@
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:06:11 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:49909 (port auto-assigned) fd 3
+Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Python main interpreter initialized at 0x10303fba0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416640 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x10303fba0 pid: 22602 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22602)
+spawned uWSGI worker 1 (pid: 22603, cores: 2)
+spawned uWSGI worker 2 (pid: 22604, cores: 2)
+spawned uWSGI worker 3 (pid: 22605, cores: 2)
+spawned uWSGI worker 4 (pid: 22606, cores: 2)
+spawned uWSGI http 1 (pid: 22607)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 22607)
+worker 3 buried after 3 seconds
+Sun Nov 24 00:12:18 2024 - worker 1 (pid: 22603) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:12:18 2024 - worker 2 (pid: 22604) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:12:18 2024 - worker 4 (pid: 22606) is taking too much time to die...NO MERCY !!!
+worker 4 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:12:39 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:50146 (port auto-assigned) fd 3
+Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Python main interpreter initialized at 0x102db3ba0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416640 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x102db3ba0 pid: 23077 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23077)
+spawned uWSGI worker 1 (pid: 23078, cores: 2)
+spawned uWSGI worker 2 (pid: 23079, cores: 2)
+spawned uWSGI worker 3 (pid: 23080, cores: 2)
+spawned uWSGI worker 4 (pid: 23081, cores: 2)
+spawned uWSGI http 1 (pid: 23082)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 23082)
+worker 1 buried after 1 seconds
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:16:11 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Sun Nov 24 00:16:11 2024 - worker 2 (pid: 23079) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:16:11 2024 - worker 3 (pid: 23080) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:16:11 2024 - worker 4 (pid: 23081) is taking too much time to die...NO MERCY !!!
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:20:12 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:50400 (port auto-assigned) fd 3
+Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Python main interpreter initialized at 0x1012bbba0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416640 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1012bbba0 pid: 23215 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23215)
+spawned uWSGI worker 1 (pid: 23216, cores: 2)
+spawned uWSGI worker 2 (pid: 23217, cores: 2)
+spawned uWSGI worker 3 (pid: 23218, cores: 2)
+spawned uWSGI worker 4 (pid: 23219, cores: 2)
+spawned uWSGI http 1 (pid: 23220)
+Gracefully killing worker 3 (pid: 23218)...
+gateway "uWSGI http 1" has been buried (pid: 23220)
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 23218)...
+worker 3 buried after 3 seconds
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 23220)
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:21:00 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Sun Nov 24 00:21:56 2024 - worker 1 (pid: 23216) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:21:56 2024 - worker 2 (pid: 23217) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:21:56 2024 - worker 4 (pid: 23219) is taking too much time to die...NO MERCY !!!
+worker 4 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:27:50 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:5001 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:50651 (port auto-assigned) fd 3
+Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Python main interpreter initialized at 0x103047ba0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416640 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x103047ba0 pid: 23390 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23390)
+spawned uWSGI worker 1 (pid: 23391, cores: 2)
+spawned uWSGI worker 2 (pid: 23392, cores: 2)
+spawned uWSGI worker 3 (pid: 23393, cores: 2)
+spawned uWSGI worker 4 (pid: 23394, cores: 2)
+spawned uWSGI http 1 (pid: 23395)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 23395)
+worker 3 buried after 1 seconds
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:29:49 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:5001).
+bind(): Address already in use [core/socket.c line 769]
+Sun Nov 24 00:30:21 2024 - worker 1 (pid: 23391) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:30:21 2024 - worker 2 (pid: 23392) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:30:21 2024 - worker 4 (pid: 23394) is taking too much time to die...NO MERCY !!!
+worker 4 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:32:07 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /tmp/uwsgi.sock fd 3
+Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Python main interpreter initialized at 0x105323ba0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416640 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x105323ba0 pid: 23520 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23520)
+spawned uWSGI worker 1 (pid: 23521, cores: 2)
+spawned uWSGI worker 2 (pid: 23522, cores: 2)
+spawned uWSGI worker 3 (pid: 23523, cores: 2)
+spawned uWSGI worker 4 (pid: 23524, cores: 2)
+Sun Nov 24 00:33:04 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Sun Nov 24 00:33:04 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+[pid: 23521|app: 0|req: 2/1] 127.0.0.1 () {54 vars in 977 bytes} [Sun Nov 24 00:32:33 2024] POST /api/submit => generated 0 bytes in 30097 msecs (HTTP/1.1 500) 4 headers in 0 bytes (1 switches on core 0)
+Sun Nov 24 00:33:06 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+Sun Nov 24 00:33:06 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+[pid: 23521|app: 0|req: 3/2] 127.0.0.1 () {54 vars in 977 bytes} [Sun Nov 24 00:32:36 2024] POST /api/submit => generated 0 bytes in 30229 msecs (HTTP/1.1 500) 4 headers in 0 bytes (1 switches on core 1)
+Sun Nov 24 00:33:34 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Sun Nov 24 00:33:34 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+[pid: 23521|app: 0|req: 4/3] 127.0.0.1 () {54 vars in 977 bytes} [Sun Nov 24 00:33:04 2024] POST /api/submit => generated 0 bytes in 30066 msecs (HTTP/1.1 500) 4 headers in 0 bytes (0 switches on core 0)
+Sun Nov 24 00:33:36 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+Sun Nov 24 00:33:36 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+[pid: 23521|app: 0|req: 5/4] 127.0.0.1 () {54 vars in 977 bytes} [Sun Nov 24 00:33:06 2024] POST /api/submit => generated 0 bytes in 30222 msecs (HTTP/1.1 500) 4 headers in 0 bytes (0 switches on core 1)
+Sun Nov 24 00:34:04 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Sun Nov 24 00:34:04 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+[pid: 23521|app: 0|req: 6/5] 127.0.0.1 () {54 vars in 977 bytes} [Sun Nov 24 00:33:34 2024] POST /api/submit => generated 0 bytes in 30072 msecs (HTTP/1.1 500) 4 headers in 0 bytes (0 switches on core 0)
+Sun Nov 24 00:34:07 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+Sun Nov 24 00:34:07 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+[pid: 23521|app: 0|req: 6/6] 127.0.0.1 () {54 vars in 977 bytes} [Sun Nov 24 00:33:36 2024] POST /api/submit => generated 0 bytes in 30224 msecs (HTTP/1.1 500) 4 headers in 0 bytes (0 switches on core 1)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+*** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:35:46 2024] ***
+compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+nodename: baotianyidemini
+machine: arm64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 14
+current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+unable to find user $(whoami)
+VACUUM WARNING: unix socket /tmp/uwsgi.sock changed inode. Skip removal
+Sun Nov 24 00:36:14 2024 - worker 2 (pid: 23522) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:36:14 2024 - worker 3 (pid: 23523) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:36:14 2024 - worker 4 (pid: 23524) is taking too much time to die...NO MERCY !!!
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM WARNING: unix socket /tmp/uwsgi.sock changed inode. Skip removal
+Sun Nov 24 00:37:54 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:37:54 2024] ***
+Sun Nov 24 00:37:54 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Sun Nov 24 00:37:54 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Sun Nov 24 00:37:54 2024 - nodename: baotianyidemini
+Sun Nov 24 00:37:54 2024 - machine: arm64
+Sun Nov 24 00:37:54 2024 - clock source: unix
+Sun Nov 24 00:37:54 2024 - pcre jit disabled
+Sun Nov 24 00:37:54 2024 - detected number of CPU cores: 14
+Sun Nov 24 00:37:54 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Sun Nov 24 00:37:54 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+Sun Nov 24 00:37:54 2024 - your processes number limit is 10666
+Sun Nov 24 00:37:54 2024 - your memory page size is 16384 bytes
+Sun Nov 24 00:37:54 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Sun Nov 24 00:37:54 2024 - detected max file descriptor number: 256
+Sun Nov 24 00:37:54 2024 - lock engine: OSX spinlocks
+Sun Nov 24 00:37:54 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Sun Nov 24 00:37:54 2024 - uWSGI http bound on :5001 fd 4
+Sun Nov 24 00:37:54 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:51017 (port auto-assigned) fd 3
+Sun Nov 24 00:37:54 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Sun Nov 24 00:37:54 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 00:37:54 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 00:37:54 2024 - Python main interpreter initialized at 0x103b1fba0
+Sun Nov 24 00:37:54 2024 - python threads support enabled
+Sun Nov 24 00:37:54 2024 - your server socket listen backlog is limited to 100 connections
+Sun Nov 24 00:37:54 2024 - your mercy for graceful operations on workers is 60 seconds
+Sun Nov 24 00:37:54 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Sun Nov 24 00:37:54 2024 - *** Operational MODE: preforking+threaded ***
+Sun Nov 24 00:37:54 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+Sun Nov 24 00:37:54 2024 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x103b1fba0 pid: 23653 (default app)
+Sun Nov 24 00:37:54 2024 - *** uWSGI is running in multiple interpreter mode ***
+Sun Nov 24 00:37:54 2024 - spawned uWSGI master process (pid: 23653)
+Sun Nov 24 00:37:54 2024 - spawned uWSGI worker 1 (pid: 23654, cores: 2)
+Sun Nov 24 00:37:54 2024 - spawned uWSGI worker 2 (pid: 23655, cores: 2)
+Sun Nov 24 00:37:54 2024 - spawned uWSGI worker 3 (pid: 23656, cores: 2)
+Sun Nov 24 00:37:54 2024 - spawned uWSGI worker 4 (pid: 23657, cores: 2)
+Sun Nov 24 00:37:54 2024 - spawned uWSGI http 1 (pid: 23658)
+[pid: 23656|app: 0|req: 1/1] 127.0.0.1 () {28 vars in 318 bytes} [Sun Nov 24 00:38:07 2024] GET /api/records => generated 1816 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 105 bytes (1 switches on core 0)
+[pid: 23656|app: 0|req: 3/2] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:38:48 2024] POST /api/submit => generated 249 bytes in 30220 msecs (HTTP/1.0 500) 4 headers in 157 bytes (2 switches on core 1)
+[pid: 23656|app: 0|req: 4/3] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:38:53 2024] POST /api/submit => generated 249 bytes in 30076 msecs (HTTP/1.0 500) 4 headers in 157 bytes (2 switches on core 0)
+[pid: 23656|app: 0|req: 5/4] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:39:18 2024] POST /api/submit => generated 249 bytes in 30234 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 1)
+[pid: 23656|app: 0|req: 6/5] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:39:23 2024] POST /api/submit => generated 249 bytes in 30068 msecs (HTTP/1.0 500) 4 headers in 157 bytes (1 switches on core 0)
+Sun Nov 24 00:40:19 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+Sun Nov 24 00:40:19 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+[pid: 23656|app: 0|req: 7/6] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:39:48 2024] POST /api/submit => generated 0 bytes in 30219 msecs (HTTP/1.0 500) 4 headers in 0 bytes (0 switches on core 1)
+Sun Nov 24 00:40:19 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /api/records (127.0.0.1)
+OSError: write error
+Sun Nov 24 00:40:19 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+[pid: 23656|app: 0|req: 8/7] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 00:40:19 2024] GET /api/records => generated 0 bytes in 8 msecs (HTTP/1.0 200) 3 headers in 0 bytes (0 switches on core 1)
+Sun Nov 24 00:40:19 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /api/records (127.0.0.1)
+OSError: write error
+Sun Nov 24 00:40:19 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+[pid: 23656|app: 0|req: 9/8] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 00:40:19 2024] GET /api/records => generated 0 bytes in 7 msecs (HTTP/1.0 200) 3 headers in 0 bytes (0 switches on core 1)
+Sun Nov 24 00:40:23 2024 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Sun Nov 24 00:40:23 2024 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during POST /api/submit (127.0.0.1)
+OSError: write error
+[pid: 23656|app: 0|req: 9/9] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:39:53 2024] POST /api/submit => generated 0 bytes in 30070 msecs (HTTP/1.0 500) 4 headers in 0 bytes (0 switches on core 0)
+Sun Nov 24 00:43:36 2024 - *** HARAKIRI ON WORKER 3 (pid: 23656, try: 1, graceful: yes) ***
+Sun Nov 24 00:43:36 2024 - HARAKIRI !!! worker 3 status !!!
+Sun Nov 24 00:43:36 2024 - HARAKIRI [core 1] 127.0.0.1 - POST /api/submit since 1732380186
+Sun Nov 24 00:43:36 2024 - HARAKIRI !!! end of worker 3 status !!!
+Sun Nov 24 00:43:36 2024 - HARAKIRI triggered by worker 3 core 0 !!!
+Sun Nov 24 00:43:37 2024 - DAMN ! worker 3 (pid: 23656) died, killed by signal 9 :( trying respawn ...
+Sun Nov 24 00:43:37 2024 - Respawned uWSGI worker 3 (new pid: 23700)
+Sun Nov 24 00:45:26 2024 - SIGINT/SIGTERM received...killing workers...
+Sun Nov 24 00:45:26 2024 - gateway "uWSGI http 1" has been buried (pid: 23658)
+Sun Nov 24 00:45:27 2024 - worker 3 buried after 1 seconds
+Sun Nov 24 00:46:27 2024 - worker 1 (pid: 23654) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:46:27 2024 - worker 2 (pid: 23655) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:46:27 2024 - worker 4 (pid: 23657) is taking too much time to die...NO MERCY !!!
+Sun Nov 24 00:46:28 2024 - worker 4 buried after 1 seconds
+Sun Nov 24 00:46:28 2024 - worker 2 buried after 1 seconds
+Sun Nov 24 00:46:28 2024 - worker 1 buried after 1 seconds
+Sun Nov 24 00:46:28 2024 - goodbye to uWSGI.
+Sun Nov 24 00:50:15 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Sun Nov 24 00:50:15 2024] ***
+Sun Nov 24 00:50:15 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Sun Nov 24 00:50:15 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Sun Nov 24 00:50:15 2024 - nodename: baotianyidemini
+Sun Nov 24 00:50:15 2024 - machine: arm64
+Sun Nov 24 00:50:15 2024 - clock source: unix
+Sun Nov 24 00:50:15 2024 - pcre jit disabled
+Sun Nov 24 00:50:15 2024 - detected number of CPU cores: 14
+Sun Nov 24 00:50:15 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Sun Nov 24 00:50:15 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv/bin/uwsgi
+Sun Nov 24 00:50:15 2024 - your processes number limit is 10666
+Sun Nov 24 00:50:15 2024 - your memory page size is 16384 bytes
+Sun Nov 24 00:50:15 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Sun Nov 24 00:50:15 2024 - detected max file descriptor number: 256
+Sun Nov 24 00:50:15 2024 - lock engine: OSX spinlocks
+Sun Nov 24 00:50:15 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Sun Nov 24 00:50:15 2024 - uWSGI http bound on :5001 fd 4
+Sun Nov 24 00:50:15 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:51488 (port auto-assigned) fd 3
+Sun Nov 24 00:50:15 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Sun Nov 24 00:50:15 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 00:50:15 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Sun Nov 24 00:50:15 2024 - Python main interpreter initialized at 0x1015ebba0
+Sun Nov 24 00:50:15 2024 - python threads support enabled
+Sun Nov 24 00:50:15 2024 - your server socket listen backlog is limited to 100 connections
+Sun Nov 24 00:50:15 2024 - your mercy for graceful operations on workers is 60 seconds
+Sun Nov 24 00:50:15 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Sun Nov 24 00:50:15 2024 - *** Operational MODE: preforking+threaded ***
+Sun Nov 24 00:50:15 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+Sun Nov 24 00:50:16 2024 - WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1015ebba0 pid: 23849 (default app)
+Sun Nov 24 00:50:16 2024 - *** uWSGI is running in multiple interpreter mode ***
+Sun Nov 24 00:50:16 2024 - spawned uWSGI master process (pid: 23849)
+Sun Nov 24 00:50:16 2024 - spawned uWSGI worker 1 (pid: 23850, cores: 2)
+Sun Nov 24 00:50:16 2024 - spawned uWSGI worker 2 (pid: 23851, cores: 2)
+Sun Nov 24 00:50:16 2024 - spawned uWSGI worker 3 (pid: 23852, cores: 2)
+Sun Nov 24 00:50:16 2024 - spawned uWSGI worker 4 (pid: 23853, cores: 2)
+Sun Nov 24 00:50:16 2024 - spawned uWSGI http 1 (pid: 23854)
+[pid: 23852|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 00:50:31 2024] GET /api/records => generated 3104 bytes in 11 msecs (HTTP/1.0 200) 3 headers in 105 bytes (1 switches on core 0)
+[pid: 23852|app: 0|req: 2/2] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 00:50:31 2024] GET /api/records => generated 3104 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 105 bytes (2 switches on core 1)
+[pid: 23852|app: 0|req: 3/3] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 00:50:34 2024] GET /api/records => generated 3104 bytes in 4 msecs (HTTP/1.0 200) 3 headers in 105 bytes (1 switches on core 0)
+Received request: ImmutableMultiDict([('name', '1'), ('email', '1@1'), ('phone', '11'), ('address', '11'), ('birth_date', '2024-11-23'), ('mood', '平静')])
+Files: ImmutableMultiDict([])
+SQL values: ('1', '1@1', '11', '11', '2024-11-23', '平静', None)
+Data saved to MySQL, user_id: 20
+[pid: 23852|app: 0|req: 4/4] 127.0.0.1 () {56 vars in 916 bytes} [Sun Nov 24 00:50:47 2024] POST /api/submit => generated 34 bytes in 8 msecs (HTTP/1.0 200) 4 headers in 137 bytes (2 switches on core 1)
+[pid: 23852|app: 0|req: 5/5] 127.0.0.1 () {50 vars in 791 bytes} [Sun Nov 24 00:50:48 2024] GET /api/records => generated 3268 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 105 bytes (1 switches on core 0)
