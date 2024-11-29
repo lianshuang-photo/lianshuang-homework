@@ -15,18 +15,23 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 # MySQL配置
 mysql_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '123456',
-    'database': 'user_info'
+    'host': os.getenv('MYSQL_HOST', 'mysql'),
+    'user': os.getenv('MYSQL_USER', 'root'),
+    'password': os.getenv('MYSQL_PASSWORD', '123456'),
+    'database': os.getenv('MYSQL_DATABASE', 'user_info'),
+    'port': int(os.getenv('MYSQL_PORT', 3306))
 }
 
 # Redis配置
-redis_client = redis.Redis(host='localhost', port=6379, db=0)
+redis_client = redis.Redis(
+    host=os.getenv('REDIS_HOST', 'redis'),
+    port=int(os.getenv('REDIS_PORT', 6379)),
+    db=int(os.getenv('REDIS_DB', 0))
+)
 
 # MongoDB配置
 try:
-    mongo_client = MongoClient('mongodb://localhost:27017/')
+    mongo_client = MongoClient(f"mongodb://{os.getenv('MONGO_HOST', 'mongo')}:27017/")
     mongo_client.server_info()
     mongo_db = mongo_client['user_info']
     mongo_collection = mongo_db['user_logs']

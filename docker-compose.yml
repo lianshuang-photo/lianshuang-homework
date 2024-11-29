@@ -26,9 +26,12 @@ services:
       - REDIS_HOST=redis
       - MONGO_HOST=mongo
     depends_on:
-      - mysql
-      - redis
-      - mongo
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      mongo:
+        condition: service_started
     networks:
       - app-network
 
@@ -41,7 +44,13 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
     command: mysqld --default_authentication_plugin=mysql_native_password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p123456"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     networks:
       - app-network
 
