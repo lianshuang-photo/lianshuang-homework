@@ -608,3 +608,184 @@ Sun Nov 24 01:09:59 2024 - worker 3 buried after 4 seconds
 Sun Nov 24 01:09:59 2024 - worker 2 buried after 4 seconds
 Sun Nov 24 01:09:59 2024 - worker 1 buried after 4 seconds
 Sun Nov 24 01:09:59 2024 - goodbye to uWSGI.
+Wed Nov 27 23:50:18 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Wed Nov 27 23:50:18 2024] ***
+Wed Nov 27 23:50:18 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Wed Nov 27 23:50:18 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Wed Nov 27 23:50:18 2024 - nodename: baotianyidemini
+Wed Nov 27 23:50:18 2024 - machine: arm64
+Wed Nov 27 23:50:18 2024 - clock source: unix
+Wed Nov 27 23:50:18 2024 - pcre jit disabled
+Wed Nov 27 23:50:18 2024 - detected number of CPU cores: 14
+Wed Nov 27 23:50:18 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Wed Nov 27 23:50:18 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/frontend/venv/bin/uwsgi
+Wed Nov 27 23:50:18 2024 - your processes number limit is 10666
+Wed Nov 27 23:50:18 2024 - your memory page size is 16384 bytes
+Wed Nov 27 23:50:18 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Wed Nov 27 23:50:18 2024 - detected max file descriptor number: 256
+Wed Nov 27 23:50:18 2024 - lock engine: OSX spinlocks
+Wed Nov 27 23:50:18 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Wed Nov 27 23:50:18 2024 - uWSGI http bound on :5001 fd 4
+Wed Nov 27 23:50:18 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:52567 (port auto-assigned) fd 3
+Wed Nov 27 23:50:18 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Wed Nov 27 23:50:18 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Wed Nov 27 23:50:18 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Wed Nov 27 23:50:18 2024 - Python main interpreter initialized at 0x1031a7ba0
+Wed Nov 27 23:50:18 2024 - python threads support enabled
+Wed Nov 27 23:50:18 2024 - your server socket listen backlog is limited to 100 connections
+Wed Nov 27 23:50:18 2024 - your mercy for graceful operations on workers is 60 seconds
+Wed Nov 27 23:50:18 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Wed Nov 27 23:50:18 2024 - *** Operational MODE: preforking+threaded ***
+Wed Nov 27 23:50:18 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+MongoDB连接失败: mongo:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67473fba809a38ad209509e1, topology_type: Unknown, servers: [<ServerDescription ('mongo', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongo:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Wed Nov 27 23:50:48 2024 - WSGI app 0 (mountpoint='') ready in 30 seconds on interpreter 0x1031a7ba0 pid: 34510 (default app)
+Wed Nov 27 23:50:48 2024 - *** uWSGI is running in multiple interpreter mode ***
+Wed Nov 27 23:50:48 2024 - spawned uWSGI master process (pid: 34510)
+Wed Nov 27 23:50:48 2024 - spawned uWSGI worker 1 (pid: 34515, cores: 2)
+Wed Nov 27 23:50:48 2024 - spawned uWSGI worker 2 (pid: 34516, cores: 2)
+Wed Nov 27 23:50:48 2024 - spawned uWSGI worker 3 (pid: 34517, cores: 2)
+Wed Nov 27 23:50:48 2024 - spawned uWSGI worker 4 (pid: 34518, cores: 2)
+Wed Nov 27 23:50:48 2024 - spawned uWSGI http 1 (pid: 34519)
+Wed Nov 27 23:56:38 2024 - SIGINT/SIGTERM received...killing workers...
+Wed Nov 27 23:56:38 2024 - gateway "uWSGI http 1" has been buried (pid: 34519)
+Wed Nov 27 23:56:41 2024 - worker 4 buried after 3 seconds
+Wed Nov 27 23:56:41 2024 - worker 3 buried after 3 seconds
+Wed Nov 27 23:56:41 2024 - worker 2 buried after 3 seconds
+Wed Nov 27 23:56:41 2024 - worker 1 buried after 3 seconds
+Wed Nov 27 23:56:41 2024 - goodbye to uWSGI.
+Thu Nov 28 00:22:44 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Thu Nov 28 00:22:44 2024] ***
+Thu Nov 28 00:22:44 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Thu Nov 28 00:22:44 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Thu Nov 28 00:22:44 2024 - nodename: baotianyidemini
+Thu Nov 28 00:22:44 2024 - machine: arm64
+Thu Nov 28 00:22:44 2024 - clock source: unix
+Thu Nov 28 00:22:44 2024 - pcre jit disabled
+Thu Nov 28 00:22:44 2024 - detected number of CPU cores: 14
+Thu Nov 28 00:22:44 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Thu Nov 28 00:22:44 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/frontend/venv/bin/uwsgi
+Thu Nov 28 00:22:44 2024 - your processes number limit is 10666
+Thu Nov 28 00:22:44 2024 - your memory page size is 16384 bytes
+Thu Nov 28 00:22:44 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Thu Nov 28 00:22:44 2024 - detected max file descriptor number: 256
+Thu Nov 28 00:22:44 2024 - lock engine: OSX spinlocks
+Thu Nov 28 00:22:44 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Thu Nov 28 00:22:44 2024 - uWSGI http bound on :5001 fd 4
+Thu Nov 28 00:22:44 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:60253 (port auto-assigned) fd 3
+Thu Nov 28 00:22:44 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Thu Nov 28 00:22:44 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Thu Nov 28 00:22:44 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Thu Nov 28 00:22:44 2024 - Python main interpreter initialized at 0x10394bba0
+Thu Nov 28 00:22:44 2024 - python threads support enabled
+Thu Nov 28 00:22:44 2024 - your server socket listen backlog is limited to 100 connections
+Thu Nov 28 00:22:44 2024 - your mercy for graceful operations on workers is 60 seconds
+Thu Nov 28 00:22:44 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Thu Nov 28 00:22:44 2024 - *** Operational MODE: preforking+threaded ***
+Thu Nov 28 00:22:44 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+Thu Nov 28 00:22:44 2024 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x10394bba0 pid: 36941 (default app)
+Thu Nov 28 00:22:44 2024 - *** uWSGI is running in multiple interpreter mode ***
+Thu Nov 28 00:22:44 2024 - spawned uWSGI master process (pid: 36941)
+Thu Nov 28 00:22:44 2024 - spawned uWSGI worker 1 (pid: 36942, cores: 2)
+Thu Nov 28 00:22:44 2024 - spawned uWSGI worker 2 (pid: 36943, cores: 2)
+Thu Nov 28 00:22:44 2024 - spawned uWSGI worker 3 (pid: 36944, cores: 2)
+Thu Nov 28 00:22:44 2024 - spawned uWSGI worker 4 (pid: 36945, cores: 2)
+Thu Nov 28 00:22:44 2024 - spawned uWSGI http 1 (pid: 36946)
+Thu Nov 28 00:26:30 2024 - SIGINT/SIGTERM received...killing workers...
+Thu Nov 28 00:26:30 2024 - gateway "uWSGI http 1" has been buried (pid: 36946)
+Thu Nov 28 00:26:34 2024 - worker 4 buried after 4 seconds
+Thu Nov 28 00:26:34 2024 - worker 3 buried after 4 seconds
+Thu Nov 28 00:26:34 2024 - worker 2 buried after 4 seconds
+Thu Nov 28 00:26:34 2024 - worker 1 buried after 4 seconds
+Thu Nov 28 00:26:34 2024 - goodbye to uWSGI.
+Thu Nov 28 00:30:37 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Thu Nov 28 00:30:37 2024] ***
+Thu Nov 28 00:30:37 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Thu Nov 28 00:30:37 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Thu Nov 28 00:30:37 2024 - nodename: baotianyidemini
+Thu Nov 28 00:30:37 2024 - machine: arm64
+Thu Nov 28 00:30:37 2024 - clock source: unix
+Thu Nov 28 00:30:37 2024 - pcre jit disabled
+Thu Nov 28 00:30:37 2024 - detected number of CPU cores: 14
+Thu Nov 28 00:30:37 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Thu Nov 28 00:30:37 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/frontend/venv/bin/uwsgi
+Thu Nov 28 00:30:37 2024 - your processes number limit is 10666
+Thu Nov 28 00:30:37 2024 - your memory page size is 16384 bytes
+Thu Nov 28 00:30:37 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Thu Nov 28 00:30:37 2024 - detected max file descriptor number: 256
+Thu Nov 28 00:30:37 2024 - lock engine: OSX spinlocks
+Thu Nov 28 00:30:37 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Thu Nov 28 00:30:37 2024 - uWSGI http bound on :5001 fd 4
+Thu Nov 28 00:30:37 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:62389 (port auto-assigned) fd 3
+Thu Nov 28 00:30:37 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Thu Nov 28 00:30:37 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Thu Nov 28 00:30:37 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Thu Nov 28 00:30:37 2024 - Python main interpreter initialized at 0x104d3bba0
+Thu Nov 28 00:30:37 2024 - python threads support enabled
+Thu Nov 28 00:30:37 2024 - your server socket listen backlog is limited to 100 connections
+Thu Nov 28 00:30:37 2024 - your mercy for graceful operations on workers is 60 seconds
+Thu Nov 28 00:30:37 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Thu Nov 28 00:30:37 2024 - *** Operational MODE: preforking+threaded ***
+Thu Nov 28 00:30:37 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+Thu Nov 28 00:30:37 2024 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x104d3bba0 pid: 37510 (default app)
+Thu Nov 28 00:30:37 2024 - *** uWSGI is running in multiple interpreter mode ***
+Thu Nov 28 00:30:37 2024 - spawned uWSGI master process (pid: 37510)
+Thu Nov 28 00:30:37 2024 - spawned uWSGI worker 1 (pid: 37511, cores: 2)
+Thu Nov 28 00:30:37 2024 - spawned uWSGI worker 2 (pid: 37512, cores: 2)
+Thu Nov 28 00:30:37 2024 - spawned uWSGI worker 3 (pid: 37513, cores: 2)
+Thu Nov 28 00:30:37 2024 - spawned uWSGI worker 4 (pid: 37514, cores: 2)
+Thu Nov 28 00:30:37 2024 - spawned uWSGI http 1 (pid: 37515)
+[pid: 37514|app: 0|req: 1/1] 127.0.0.1 () {36 vars in 427 bytes} [Thu Nov 28 00:34:48 2024] GET /api/records => generated 5465 bytes in 9 msecs (HTTP/1.0 200) 3 headers in 105 bytes (1 switches on core 0)
+Thu Nov 28 00:43:16 2024 - SIGINT/SIGTERM received...killing workers...
+Thu Nov 28 00:43:16 2024 - gateway "uWSGI http 1" has been buried (pid: 37515)
+Thu Nov 28 00:43:20 2024 - worker 4 buried after 4 seconds
+Thu Nov 28 00:43:20 2024 - worker 3 buried after 4 seconds
+Thu Nov 28 00:43:20 2024 - worker 2 buried after 4 seconds
+Thu Nov 28 00:43:20 2024 - worker 1 buried after 4 seconds
+Thu Nov 28 00:43:20 2024 - goodbye to uWSGI.
+Fri Nov 29 17:12:20 2024 - *** Starting uWSGI 2.0.28 (64bit) on [Fri Nov 29 17:12:20 2024] ***
+Fri Nov 29 17:12:20 2024 - compiled with version: Apple LLVM 16.0.0 (clang-1600.0.26.4) on 23 November 2024 16:02:00
+Fri Nov 29 17:12:20 2024 - os: Darwin-24.1.0 Darwin Kernel Version 24.1.0: Thu Nov 14 18:15:21 PST 2024; root:xnu-11215.41.3~13/RELEASE_ARM64_T6041
+Fri Nov 29 17:12:20 2024 - nodename: baotianyidemini
+Fri Nov 29 17:12:20 2024 - machine: arm64
+Fri Nov 29 17:12:20 2024 - clock source: unix
+Fri Nov 29 17:12:20 2024 - pcre jit disabled
+Fri Nov 29 17:12:20 2024 - detected number of CPU cores: 14
+Fri Nov 29 17:12:20 2024 - current working directory: /Users/baotianyi/PycharmProjects/lianshuang-homework/backend
+Fri Nov 29 17:12:20 2024 - detected binary path: /Users/baotianyi/PycharmProjects/lianshuang-homework/frontend/venv/bin/uwsgi
+Fri Nov 29 17:12:20 2024 - your processes number limit is 10666
+Fri Nov 29 17:12:20 2024 - your memory page size is 16384 bytes
+Fri Nov 29 17:12:20 2024 -  *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+Fri Nov 29 17:12:20 2024 - detected max file descriptor number: 256
+Fri Nov 29 17:12:20 2024 - lock engine: OSX spinlocks
+Fri Nov 29 17:12:20 2024 - thunder lock: disabled (you can enable it with --thunder-lock)
+Fri Nov 29 17:12:20 2024 - uWSGI http bound on :5001 fd 4
+Fri Nov 29 17:12:20 2024 - uwsgi socket 0 bound to TCP address 127.0.0.1:62225 (port auto-assigned) fd 3
+Fri Nov 29 17:12:20 2024 - Python version: 3.13.0 (main, Oct  7 2024, 05:02:14) [Clang 16.0.0 (clang-1600.0.26.4)]
+Fri Nov 29 17:12:20 2024 - PEP 405 virtualenv detected: /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Fri Nov 29 17:12:20 2024 - Set PythonHome to /Users/baotianyi/PycharmProjects/lianshuang-homework/venv
+Fri Nov 29 17:12:20 2024 - Python main interpreter initialized at 0x103417ba0
+Fri Nov 29 17:12:20 2024 - python threads support enabled
+Fri Nov 29 17:12:20 2024 - your server socket listen backlog is limited to 100 connections
+Fri Nov 29 17:12:20 2024 - your mercy for graceful operations on workers is 60 seconds
+Fri Nov 29 17:12:20 2024 - mapped 703360 bytes (686 KB) for 8 cores
+Fri Nov 29 17:12:20 2024 - *** Operational MODE: preforking+threaded ***
+Fri Nov 29 17:12:20 2024 - added /Users/baotianyi/PycharmProjects/lianshuang-homework/backend/ to pythonpath.
+Fri Nov 29 17:12:20 2024 - WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x103417ba0 pid: 44240 (default app)
+Fri Nov 29 17:12:20 2024 - *** uWSGI is running in multiple interpreter mode ***
+Fri Nov 29 17:12:20 2024 - spawned uWSGI master process (pid: 44240)
+Fri Nov 29 17:12:20 2024 - spawned uWSGI worker 1 (pid: 44241, cores: 2)
+Fri Nov 29 17:12:20 2024 - spawned uWSGI worker 2 (pid: 44242, cores: 2)
+Fri Nov 29 17:12:20 2024 - spawned uWSGI worker 3 (pid: 44243, cores: 2)
+Fri Nov 29 17:12:20 2024 - spawned uWSGI worker 4 (pid: 44244, cores: 2)
+Fri Nov 29 17:12:20 2024 - spawned uWSGI http 1 (pid: 44245)
+[pid: 44244|app: 0|req: 1/1] 127.0.0.1 () {36 vars in 438 bytes} [Fri Nov 29 17:12:28 2024] GET /api/records => generated 6547 bytes in 10 msecs (HTTP/1.0 200) 3 headers in 105 bytes (1 switches on core 0)
+[pid: 44244|app: 0|req: 2/2] 127.0.0.1 () {52 vars in 813 bytes} [Fri Nov 29 17:12:33 2024] GET /api/records => generated 6547 bytes in 6 msecs (HTTP/1.0 200) 4 headers in 139 bytes (1 switches on core 1)
+[pid: 44243|app: 0|req: 1/3] 127.0.0.1 () {52 vars in 814 bytes} [Fri Nov 29 17:12:37 2024] GET /api/records => generated 6547 bytes in 17 msecs (HTTP/1.0 200) 4 headers in 139 bytes (1 switches on core 0)
+[pid: 44243|app: 0|req: 2/4] 127.0.0.1 () {52 vars in 814 bytes} [Fri Nov 29 17:13:56 2024] GET /api/records => generated 6547 bytes in 3 msecs (HTTP/1.0 200) 4 headers in 139 bytes (1 switches on core 1)
+[pid: 44244|app: 0|req: 3/5] 127.0.0.1 () {52 vars in 814 bytes} [Fri Nov 29 17:15:38 2024] GET /api/records => generated 6547 bytes in 4 msecs (HTTP/1.0 200) 4 headers in 139 bytes (1 switches on core 0)
+[pid: 44244|app: 0|req: 4/6] 127.0.0.1 () {52 vars in 814 bytes} [Fri Nov 29 17:15:41 2024] GET /api/records => generated 6547 bytes in 5 msecs (HTTP/1.0 200) 4 headers in 139 bytes (1 switches on core 1)
+[pid: 44244|app: 0|req: 5/7] 127.0.0.1 () {52 vars in 814 bytes} [Fri Nov 29 17:15:44 2024] GET /api/records => generated 6547 bytes in 5 msecs (HTTP/1.0 200) 4 headers in 139 bytes (1 switches on core 0)
+Fri Nov 29 17:15:59 2024 - SIGINT/SIGTERM received...killing workers...
+Fri Nov 29 17:15:59 2024 - gateway "uWSGI http 1" has been buried (pid: 44245)
+Fri Nov 29 17:16:03 2024 - worker 4 buried after 4 seconds
+Fri Nov 29 17:16:03 2024 - worker 3 buried after 4 seconds
+Fri Nov 29 17:16:03 2024 - worker 2 buried after 4 seconds
+Fri Nov 29 17:16:03 2024 - worker 1 buried after 4 seconds
+Fri Nov 29 17:16:03 2024 - goodbye to uWSGI.

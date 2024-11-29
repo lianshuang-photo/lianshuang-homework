@@ -5,86 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>提交记录</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .records-container {
-            background-color: #252525;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
-            margin: 20px auto;
-            max-width: 1000px;
-        }
-
-        .record-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            color: var(--text-color);
-        }
-
-        .record-table th,
-        .record-table td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #404040;
-        }
-
-        .record-table th {
-            background-color: var(--input-bg);
-            font-weight: bold;
-        }
-
-        .record-table tr:hover {
-            background-color: #333;
-        }
-
-        .nav-links {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .nav-links a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        .no-records {
-            text-align: center;
-            padding: 20px;
-            color: #888;
-        }
-
-        .refresh-btn {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        .refresh-btn:hover {
-            background-color: #357abd;
-        }
-    </style>
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()" title="切换主题">
+        <span class="icon">🌓</span>
+    </button>
     <div class="container">
         <div class="records-container">
             <h2>提交记录</h2>
             <div class="nav-links">
-                <a href="index.html">返回提交页面</a>
+                <a href="index.html" class="back-link">← 返回提交页面</a>
                 <button class="refresh-btn" onclick="loadRecords()">刷新数据</button>
             </div>
             <div id="recordsTable"></div>
         </div>
     </div>
     <script src="js/records.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html> 

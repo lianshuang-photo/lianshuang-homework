@@ -3,44 +3,79 @@ document.getElementById('image').addEventListener('change', function(e) {
     const file = e.target.files[0];
     
     if (file) {
+        if (!file.type.startsWith('image/')) {
+            showError('请选择图片文件');
+            return;
+        }
+        
         const reader = new FileReader();
         reader.onload = function(e) {
-            preview.innerHTML = `<img src="${e.target.result}" alt="预览图片">`;
+            preview.innerHTML = `
+                <div class="preview-container">
+                    <img src="${e.target.result}" alt="预览图片">
+                    <button type="button" class="remove-image" onclick="clearImage()">×</button>
+                </div>`;
         }
         reader.readAsDataURL(file);
     } else {
-        preview.innerHTML = '';
+        clearImage();
     }
 });
 
+function clearImage() {
+    document.getElementById('image').value = '';
+    document.getElementById('image-preview').innerHTML = '';
+}
+
+function showError(message) {
+    const errorDiv = document.createElement('div');
+    errorDiv.className = 'error-message';
+    errorDiv.textContent = message;
+    document.body.appendChild(errorDiv);
+    setTimeout(() => errorDiv.remove(), 3000);
+}
+
+function showSuccess(message) {
+    const successDiv = document.createElement('div');
+    successDiv.className = 'success-message';
+    successDiv.textContent = message;
+    document.body.appendChild(successDiv);
+    setTimeout(() => successDiv.remove(), 3000);
+}
+
 async function submitForm(formData, retryCount = 3) {
+    const submitButton = document.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.innerHTML = '<span class="loading-spinner"></span> 提交中...';
+
     for (let i = 0; i < retryCount; i++) {
         try {
-            const response = await fetch('http://localhost:8080/api/submit', {
+            const response = await fetch('/api/submit', {
                 method: 'POST',
                 body: formData
             });
 
-            console.log('Response status:', response.status);
-            
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`提交失败 (${response.status})`);
             }
 
             const result = await response.json();
-            console.log('Response data:', result);
-            
             if (result.status === 'success') {
+                showSuccess('提交成功！');
                 return result;
             }
             throw new Error(result.message || '提交失败');
         } catch (error) {
-            console.error(`Attempt ${i + 1} failed:`, error);
+            console.error(`尝试 ${i + 1} 失败:`, error);
             if (i === retryCount - 1) {
                 throw error;
             }
-            // 等待一段时间后重试
             await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
+        } finally {
+            if (i === retryCount - 1) {
+                submitButton.disabled = false;
+                submitButton.textContent = '提交信息';
+            }
         }
     }
 }
@@ -50,11 +85,18 @@ document.getElementById('userForm').addEventListener('submit', async (e) => {
     
     try {
         const formData = new FormData();
-        formData.append('name', document.getElementById('name').value);
-        formData.append('email', document.getElementById('email').value);
-        formData.append('phone', document.getElementById('phone').value);
-        formData.append('address', document.getElementById('address').value);
-        formData.append('birth_date', document.getElementById('birth_date').value);
+        const requiredFields = ['name', 'email', 'phone', 'birth_date'];
+        
+        for (const field of requiredFields) {
+            const value = document.getElementById(field).value.trim();
+            if (!value) {
+                showError(`请填写${field === 'birth_date' ? '出生日期' : field}`);
+                return;
+            }
+            formData.append(field, value);
+        }
+        
+        formData.append('address', document.getElementById('address').value.trim());
         
         const mood = document.getElementById('mood').value;
         if (mood) {
@@ -66,15 +108,27 @@ document.getElementById('userForm').addEventListener('submit', async (e) => {
             formData.append('image', imageFile);
         }
 
-        console.log('Sending data:', Object.fromEntries(formData));
-
         const result = await submitForm(formData);
-        alert('提交成功！');
         document.getElementById('userForm').reset();
         document.getElementById('image-preview').innerHTML = '';
-        window.location.href = 'records.html';
+        
+        // 使用平滑过渡到记录页面
+        document.body.style.opacity = '0';
+        setTimeout(() => {
+            window.location.href = 'records.html';
+        }, 500);
     } catch (error) {
-        console.error('Error details:', error);
-        alert('提交出错：' + error.message);
+        showError(error.message);
     }
+});
+
+// 添加表单验证
+document.querySelectorAll('input, textarea').forEach(element => {
+    element.addEventListener('input', function() {
+        this.classList.remove('error');
+        const errorMessage = this.parentElement.querySelector('.error-message');
+        if (errorMessage) {
+            errorMessage.remove();
+        }
+    });
 }); 

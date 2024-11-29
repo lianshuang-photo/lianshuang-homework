@@ -26,15 +26,12 @@ redis_client = redis.Redis(host='localhost', port=6379, db=0)
 
 # MongoDB配置
 try:
-    mongo_client = MongoClient('mongodb://localhost:27017/', 
-                             serverSelectionTimeoutMS=5000)  # 添加超时设置
-    # 测试连接
+    mongo_client = MongoClient('mongodb://localhost:27017/')
     mongo_client.server_info()
     mongo_db = mongo_client['user_info']
     mongo_collection = mongo_db['user_logs']
 except Exception as e:
     print(f"MongoDB连接失败: {str(e)}")
-    # 可以设置一个标志来标识MongoDB是否可用
     MONGODB_AVAILABLE = False
 else:
     MONGODB_AVAILABLE = True
