@@ -1,16 +1,5 @@
-# 个人信息管理系统
 
-## 项目简介
-一个基于 Flask + MySQL 的个人信息管理系统，支持用户信息的提交、存储和查询，具有图片上传、数据缓存等功能。
-
-## 功能特点
-- 支持用户基本信息录入（姓名、邮箱、电话等）
-- 图片上传和预览功能
-- 心情选择功能
-- 响应式设计，支持移动端访问
-- 深色/浅色主题切换
-- 数据实时缓存
-- 操作日志记录
+# 个人信息管理系统部署文档
 
 ## 目录
 - [系统概况](#系统概况)
@@ -375,8 +364,35 @@ sudo chown -R $(whoami):admin /opt/homebrew/var/log/nginx
 ## Docker 部署说明
 
 ### 1. 准备工作
-- 确保已安装 Docker 和 Docker Compose
-- 克隆项目代码到本地
+1. 确保已安装 Docker 和 Docker Compose:
+```bash
+# 更新包列表
+sudo apt update
+
+# 安装 Docker 和 Docker Compose
+sudo apt install docker.io
+sudo apt install docker-compose
+
+# 启动 Docker 服务
+sudo systemctl start docker
+
+# 设置开机自启
+sudo systemctl enable docker
+
+# 验证安装
+docker --version
+```
+2. 克隆项目代码到本地：
+```bash
+# 安装 Git
+sudo apt install git
+
+# 克隆代码
+git clone https://github.com/lianshuang-photo/lianshuang-homework.git
+
+# 进入项目目录
+cd lianshuang-homework
+```
 
 ### 2. 项目结构
 ```plaintext
@@ -459,6 +475,14 @@ docker-compose down
 
 # 如果需要清除数据卷
 docker-compose down -v
+```
+
+4. 重启服务：
+```bash
+# 停止服务
+docker-compose down
+# 启动服务
+docker-compose up -d
 ```
 
 ### 5. 服务访问
